@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Page</title>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="gogaga_holidays_logo.webp">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#holidayPackages">Packages</a></li>
+            <li><a href="#bookings">Bookings</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+        <i id="barsIcon" class="fa-solid fa-bars"></i>
+        <i id="xmarkIcon" class="fa-solid fa-xmark"></i>
+    </nav>
+    <ul id="dropMenu">
+        <li><a href="#">Home</a></li>
+            <li><a href="#holidayPackages">Packages</a></li>
+            <li><a href="#bookings">Bookings</a></li>
+            <li><a href="#footer">Contact</a></li>
+    </ul>
+
+    <div class="bg-container">
+        <div class="text-container">
+            <h1>Does your Holiday need to be customized?</h1>
+            <p>Yes! We believe that every holiday needs to be customized as they are unique. Explore our customized
+                holidays
+                for a memorable holiday experience</p>
+        </div>
+        <button id="exploreBtn"><a href="https://www.gogagaholidays.com/" target="_blank">Explore <i class="fas fa-arrow-right"></i></a></button>
+
+    </div>
+
+    <div id="holidayPackages" class="container">
+        <h1>Holiday Packages</h1>
+        
+        <div class="package">
+          <img src="gogaga_tourism_bg_image.webp" alt="Package Image">
+          <div class="package-details">
+            <h2 class="package-title">Sea Drives</h2>
+            <p class="package-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo id dolor consectetur fermentum.</p>
+            <p class="package-price">$799</p>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+        </div>
+      
+        <div class="package">
+          <img src="tourism_img_1.webp" alt="Package Image">
+          <div class="package-details">
+            <h2 class="package-title">Sea With Sunlight</h2>
+            <p class="package-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo id dolor consectetur fermentum.</p>
+            <p class="package-price">$599</p>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+        </div>
+
+        <div class="package">
+            <img src="tourism_img_2.webp" alt="Package Image">
+            <div class="package-details">
+              <h2 class="package-title">Ancient Buildings</h2>
+              <p class="package-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo id dolor consectetur fermentum.</p>
+              <p class="package-price">$999</p>
+              <a href="#" class="btn">Book Now</a>
+            </div>
+          </div>
+
+          <div class="package">
+            <img src="tourism_img_3.webp" alt="Package Image">
+            <div class="package-details">
+              <h2 class="package-title">Beach Coconut</h2>
+              <p class="package-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo id dolor consectetur fermentum.</p>
+              <p class="package-price">$899</p>
+              <a href="#" class="btn">Book Now</a>
+            </div>
+          </div>
+
+          <div class="package">
+            <img src="tourism_img_4.webp" alt="Package Image">
+            <div class="package-details">
+              <h2 class="package-title">Beach Elephant</h2>
+              <p class="package-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo id dolor consectetur fermentum.</p>
+              <p class="package-price">$499</p>
+              <a href="#" class="btn">Book Now</a>
+            </div>
+          </div>
+
+          <div class="package">
+            <img src="tourism_img_5.webp" alt="Package Image">
+            <div class="package-details">
+              <h2 class="package-title">Honeymoon</h2>
+              <p class="package-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo id dolor consectetur fermentum.</p>
+              <p class="package-price">$1999</p>
+              <a href="#" class="btn">Book Now</a>
+            </div>
+          </div>
+      </div>
+
+    
+<div id="bookings" class="flight-container">
+    <h1>Flight Search</h1>
+    <form id="flight-search-form">
+      <label for="flight-origin">Origin:</label>
+      <input type="text" id="flight-origin" name="flight-origin" required>
+      <label for="flight-destination">Destination:</label>
+      <input type="text" id="flight-destination" name="flight-destination" required>
+      <label for="departure-date">Departure Date:</label>
+      <input type="date" id="departure-date" name="departure-date" required>
+      <label for="passengers">Passengers:</label>
+      <input type="number" id="passengers" name="passengers" min="1" value="1" required>
+      <button type="submit">Search Flights</button>
+    </form>
+  </div>
+  
+  <div class="results-container">
+    <h1>Search Results</h1>
+    <div id="search-results">
+      <!-- Flight search results will be displayed here -->
+    </div>
+  </div>
+
+  <div class="hotel-container">
+    <h1>Hotel Search</h1>
+    <form id="hotel-search-form">
+      <label for="hotel-destination">Destination:</label>
+      <input type="text" id="hotel-destination" name="hotel-destination" required>
+      <label for="check-in-date">Check-in Date:</label>
+      <input type="date" id="check-in-date" name="check-in-date" required>
+      <label for="check-out-date">Check-out Date:</label>
+      <input type="date" id="check-out-date" name="check-out-date" required>
+      <label for="guests">Guests:</label>
+      <input type="number" id="guests" name="guests" min="1" value="1" required>
+      <button type="submit">Search Hotels</button>
+    </form>
+  </div>
+  
+  <div class="results-container">
+    <h1>Search Results</h1>
+    <div id="search-results">
+      <!-- Hotel search results will be displayed here -->
+    </div>
+  </div>
+
+  
+<div id="packages" class="package-collections">
+
+    
+    <div class="collection">
+      <img src="adventure_img.avif" alt="Collection Image">
+      <h2 class="collection-title">Adventure Collection</h2>
+      <p class="collection-description">Explore exciting destinations, experiences.</p>
+      <a href="#" class="view-collection-btn">View Collection</a>
+    </div>
+  
+    <div class="collection">
+      <img src="beach_imgs.jpeg" alt="Collection Image">
+      <h2 class="collection-title">Beach Collection</h2>
+      <p class="collection-description">Watching see can Prevent Our Worries.</p>
+      <a href="#" class="view-collection-btn">View Collection</a>
+    </div>
+
+    <div class="collection">
+        <img src="summer_imgs.jpeg" alt="Collection Image">
+        <h2 class="collection-title">Summer Vacation</h2>
+        <p class="collection-description">Relax on beautiful beaches, enjoy the sun.</p>
+        <a href="#" class="view-collection-btn">View Collection</a>
+      </div>
+
+      <div class="collection">
+        <img src="winter_images.jpeg" alt="Collection Image">
+        <h2 class="collection-title">Winter Snow</h2>
+        <p class="collection-description">Enjoy the Ultimate Winter and Snow.</p>
+        <a href="#" class="view-collection-btn">View Collection</a>
+      </div>
+
+      <div class="collection">
+        <img src="rainy_imgs.jpeg" alt="Collection Image">
+        <h2 class="collection-title">Rainy Collections</h2>
+        <p class="collection-description">Relax on beautiful and enjoy the Rain.</p>
+        <a href="#" class="view-collection-btn">View Collection</a>
+      </div>
+
+      <div class="collection">
+        <img src="travel_imgs.jpeg" alt="Collection Image">
+        <h2 class="collection-title">Travel Collection</h2>
+        <p class="collection-description">Relax beautiful Travel Along Friends.</p>
+        <a href="#" class="view-collection-btn">View Collection</a>
+      </div>
+  
+  
+  </div>
+
+  <!-- // Footer Section -->
+
+  <footer id="footer" class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="gogaga_holidays_logo.webp" alt="Gogaga Holidays Logo">
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: info@gogagaholidays.com</p>
+        <p>Phone: 040 4852 8197</p>
+        <p>Address: near NTR Circle, Patamata, Vijayawada, Andhra Pradesh 520010</p>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Gogaga Holidays. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+  <button id="scrollToTop"><i class="fas fa-arrow-up"></i></button>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
